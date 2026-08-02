@@ -16,34 +16,6 @@ alias t='tmux'
 alias e='exit'
 alias v='nvim'
 
-#Directories defined in Environment Variables using export
-alias repo='cd $REPOS'
-alias dev='cd $DEV'
-alias pi='cd $PI'
-alias blog='cd $BLOG'
-alias home='cd $HOMELAB'
-alias github='cd $GITHUB'
-alias sb='cd $SECONDBRAIN'
-alias clone='cd $CLONE'
-alias scr='cd $SCRIPTS'
-alias lab='cd $LAB'
-alias master='cd $MASTER'
-alias down='cd $DOWN'
-
-
-#K8S
-alias k='kubectl'
-alias kgp='kubectl get pods'
-alias kgpa='kubectl get pods --all-namespaces'
-alias kga='kubectl get all'
-alias ksc='kubectl config set-context --current --namespace'
-alias kgc='kubectl config get-contexts'
-alias kgn='kubectl get nodes'
-
-#Flux
-alias fgk='flux get kustomizations'
-alias frk='flux reconcile kustomization'
-
 # Git
 alias gaa="git add ."
 alias gbr="git branch"

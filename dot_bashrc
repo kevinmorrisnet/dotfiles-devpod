@@ -112,44 +112,8 @@ fi
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-#directories
-export DEV="$HOME/Devops"
-export REPOS="$HOME/DevOps/Repos"
-export PI="$HOME/DevOps/Repos/github/pi-cluster"
-export BLOG="$HOME/DevOps/Repos/github/blog"
-export HOMELAB="$HOME/DevOps/Repos/github/homelab"
-export GITHUB="$HOME/DevOps/Repos/github"
-export SECONDBRAIN="$HOME/Obsidian/second-brain-ubuntu"
-export CLONE="$HOME/DevOps/Repos/clone"
-export SCRIPTS="$HOME/.scripts"
-export LAB="$HOME/DevOps/Repos/github/lab"
-export MASTER="$HOME/DevOps/Repos/github/masterclass"
-export DOWN="$HOME/Downloads"
-
 #XDG
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
 
-#PATH
-export PATH=$PATH:$HOME/.scripts
-
-#GO Path
-export GOPATH=~/go
-
-#kubectl export
-export do="--dry-run=client -o yaml"
-
-#restic
-export RESTIC_PASSWORD_FILE="$HOME/.restic-password"
-
 #activate mise
 eval "$(~/.local/bin/mise activate bash)"
-
-#kubectl completion
-source <(kubectl completion bash)
-complete -o default -F __start_kubectl k
-
-# Flux completion bash
-command -v flux >/dev/null && . <(flux completion bash)
-
-#helm completion
-source <(helm completion bash)
