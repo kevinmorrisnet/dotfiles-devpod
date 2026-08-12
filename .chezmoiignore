@@ -1,1 +1,3 @@
 setup
+.config/nvim/lazy-lock.json
+
