@@ -28,3 +28,6 @@ alias gpu="git push"
 alias gsw="git switch"
 alias gsc="git switch -c"
 alias gst="git status"
+
+# kubectl
+alias k="kubectl"

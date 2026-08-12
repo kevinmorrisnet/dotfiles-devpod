@@ -117,3 +117,9 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
 
 #activate mise
 eval "$(~/.local/bin/mise activate bash)"
+#activate bash completion with mise - "usage by jdx" is required
+eval "$(~/.local/bin/mise completion bash --include-bash-completion-lib)"
+
+#kubectl completion
+source <(kubectl completion bash)
+complete -o default -F __start_kubectl k
